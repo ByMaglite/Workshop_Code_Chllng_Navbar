@@ -1,0 +1,84 @@
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./yelkenli.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: sans-serif;
+}
+.navbar{
+    width: 100%;
+    background-color: #5b71b5;
+    text-align: center;    
+}
+.navbar ul{
+    
+    display:inline-flex;
+    list-style: none;
+}
+.navbar ul li{
+    width: 150px;
+    margin: 15px;
+    padding: 15px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.active, .navbar ul li:hover{
+    background-color: orangered;
+    border-radius: 10px;    
+}
+.navbar .fas{
+    margin-right: 8px;
+}
+.sub-menu-1{
+    display: none;
+}
+.navbar ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background-color:#5b71b5 ;
+    margin-top: 15px;
+    margin-left: -15px;
+    font-size: 10px;
+}
+.navbar ul li:hover .sub-menu-1 ul{
+    display: block;   
+}
+.navbar ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    text-align: left;
+    border-radius: 0;
+    cursor: pointer;
+}
+.navbar ul li:hover .sub-menu-1 ul li a:hover{
+    color: #b2ff00;
+}
+
+.fa-caret-right{
+    font-size: 14px;
+    color: #fff;
+    float: right;
+}
+
+.sub-menu-2{
+   display: none;
+}
+
+.hover-me:hover .sub-menu-2{
+  position: absolute;
+  display: block;
+  margin-top: -40px;
+  margin-left: 140px;
+  background: #5b71b5; 
+  }
+
+  .sub-menu-2 ul li:hover a{
+    color: #6d9709
