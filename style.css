@@ -82,3 +82,11 @@ body{
 
   .sub-menu-2 ul li:hover a{
     color: #6d9709
+  }
+
+  @media screen and (max-width: 1130px){
+      .ul{
+          width: 50%;
+
+      }
+  }
